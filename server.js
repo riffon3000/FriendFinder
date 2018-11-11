@@ -1,21 +1,17 @@
 //Node.js Dependencies
 const express = require('express');
 
-//Initialize Express.js
+//Initialize Express app
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-//Express.js to handle parsing data
+//Express app to handle parsing data
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 //Link HTML and API routes
-const apiRoutes = require('./app/routing/apiRoutes');
-const htmlRoutes = require('./app/routing/htmlRoutes');
-
-//Server routing
-apiRoutes(app);
-htmlRoutes(app);
+require('./app/routing/apiRoutes')(app);
+require('./app/routing/htmlRoutes')(app);
 
 //Start server - listener
 app.listen(PORT, ()=>{
