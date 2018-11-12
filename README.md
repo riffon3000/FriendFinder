@@ -10,5 +10,5 @@ This full-stack site will take in results from your users' survey, then compare 
 <img src="https://github.com/riffon3000/FriendFinder/blob/master/screenshot/match.png" alt="Match" style="width: 50%; height: 50%;">
 
 
-Live Link
-<a href="https://friend-finder-mrh.herokuapp.com/">Friend Finder</a>
+<H1>Live Link
+<a href="https://friend-finder-mrh.herokuapp.com/">Friend Finder</a></H1>
