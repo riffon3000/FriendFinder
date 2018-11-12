@@ -1,5 +1,6 @@
 //Node.js Dependencies
 const express = require('express');
+const bodyParser =require('body-parser');
 
 //Initialize Express app
 const app = express();
@@ -10,8 +11,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 //Link HTML and API routes
-require('./app/routing/apiRoutes.js')(app);
-require('./app/routing/htmlRoutes.js')(app);
+require('./app/routing/apiRoutes')(app);
+require('./app/routing/htmlRoutes')(app);
 
 //Start server - listener
 app.listen(PORT, ()=>{

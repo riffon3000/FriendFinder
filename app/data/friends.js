@@ -1,4 +1,4 @@
-[
+const friends = [
     {
       "name": "Ross",
       "photo": "./photos/ross.jpg",
@@ -29,4 +29,6 @@
         "photo": "./photos/rachel.jpg",
         "scores": ["2","3","3","3","5","3","4","3","2","4"]
     }
-  ]
+  ];
+
+  module.exports = friends;
